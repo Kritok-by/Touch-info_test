@@ -3,7 +3,6 @@
   border-radius: 0;
   transform: skew(45deg);
   width: 100%;
-  // height: 100%;
   outline: none;
   background: transparent;
   border: none;
@@ -16,13 +15,25 @@ body {
   border: none;
   background-image: url('./img/bg.jpg');
   .wrapper {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
+    .alert {
+      position: absolute;
+      top: -100px;
+      transition: 1s;
+      opacity: 0;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .view {
+      opacity: 1;
+    }
     h1 {
       flex-basis: 100%;
       text-align: center;
@@ -49,11 +60,15 @@ body {
         border: 1px solid #fff;
         background-color: rgb(233, 50, 35);
         text-align: center;
+        transition: 0.3s;
         button {
           text-transform: uppercase;
           color: #fff;
           @include borders;
           cursor: pointer;
+        }
+        &:hover {
+          background-color: rgb(180, 50, 35);
         }
       }
     }

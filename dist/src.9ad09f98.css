@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  background-image: url("/bg.c04a5f46.jpg");
+  background-image: url("./bg.c04a5f46.jpg");
 }
 
 body .wrapper {
@@ -10,21 +10,15 @@ body .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   font-family: 'Roboto', sans-serif;
 }
 
 body .wrapper .alert {
   position: absolute;
   top: -100px;
-  -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
   font-weight: bold;
@@ -36,8 +30,7 @@ body .wrapper .view {
 }
 
 body .wrapper h1 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   text-align: center;
   color: #fff;
   font-size: 48px;
@@ -46,18 +39,13 @@ body .wrapper h1 {
 body .wrapper .form {
   margin-top: 50px;
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 body .wrapper .form__input {
   width: 60%;
-  -webkit-transform: skew(-45deg);
-          transform: skew(-45deg);
+  transform: skew(-45deg);
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #fff;
 }
@@ -65,8 +53,7 @@ body .wrapper .form__input {
 body .wrapper .form__input input {
   border: 1px solid #fff;
   border-radius: 0;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
   width: 100%;
   outline: none;
   background: transparent;
@@ -75,13 +62,11 @@ body .wrapper .form__input input {
 }
 
 body .wrapper .form__button {
-  -webkit-transform: skew(-45deg);
-          transform: skew(-45deg);
+  transform: skew(-45deg);
   width: 30%;
   border: 1px solid #fff;
   background-color: #e93223;
   text-align: center;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -90,8 +75,7 @@ body .wrapper .form__button button {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 0;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  transform: skew(45deg);
   width: 100%;
   outline: none;
   background: transparent;
@@ -108,20 +92,20 @@ body .wrapper .form__button:hover {
   body .wrapper {
     width: 100%;
   }
+
   body .wrapper .form {
     width: 90%;
   }
-  body .wrapper .form__button, body .wrapper .form__input {
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
+
+  body .wrapper .form__button,
+  body .wrapper .form__input {
+    transform: skew(0deg);
   }
+
   body .wrapper .form__button button,
-  body .wrapper .form__button input, body .wrapper .form__input button,
+  body .wrapper .form__button input,
+  body .wrapper .form__input button,
   body .wrapper .form__input input {
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
+    transform: skew(0deg);
   }
 }
-
-
-/*# sourceMappingURL=/src.9ad09f98.css.map */
